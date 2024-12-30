@@ -12,7 +12,8 @@
 }
 
 body {
-    height: 10000px;
+    height: max-content;
+    width: 100dvw;
 }
 
 a {
@@ -36,10 +37,16 @@ li {
     border-bottom: 1px solid #22be44;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .header-container .logo {
     text-align: center;
+}
+
+.header-container .logo img {
+    width: 5rem;
+    height: 5rem;
 }
 
 
@@ -60,6 +67,8 @@ li {
     border-radius: 6px;
     font-family: var(--font-family1);
     font-weight: 600;
+    z-index: 100;
+    position: relative;
 }
 
 
@@ -79,13 +88,28 @@ li {
 
 .hero-section {
     width: 100vw;
-    height: 50vh;
-    background-color: gray;
+    height: 60vh;
+    background-image: url(Assests/Hero\ sectiom\ Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
     padding: 4rem 7rem;
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
     margin: .5rem 0;
+    position: relative;
+}
+
+.hero-section .transparent {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .hero-section .hero-text {
@@ -93,6 +117,7 @@ li {
     font-weight: 500;
     font-size: 1rem;
     color: green;
+    z-index: 100;
     /* margin-bottom: 1rem; */
 }
 
@@ -101,6 +126,7 @@ li {
     font-family: var(--font-family1);
     font-weight: 700;
     font-size: 3.4rem;
+    z-index: 100;
     color: white;
 }
 
@@ -108,6 +134,7 @@ li {
 .hero-section .hero-description {
     font-family: var(--font-family1);
     font-weight: 400;
+    z-index: 100;
     font-size: .9rem;
     color: white;
 }
@@ -115,6 +142,7 @@ li {
 .hero-section .ratings {
     display: inline-flex;
     column-gap: .5rem;
+    z-index: 100;
     align-items: center;
 }
 
@@ -185,24 +213,24 @@ li {
 
 
 .scrollable-content .img1 {
-    background-image: url(img/event.png);
+    background-image: url(Assests/event.png);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
 .scrollable-content .img2 {
-    background-image: url(img/birthday.png);
+    background-image: url(Assests/birthday.png);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 .scrollable-content .img3 {
-    background-image: url(img/delivery.png);
+    background-image: url(Assests/Delivery.png);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
 .scrollable-content .img4 {
-    background-image: url(img/food.png);
+    background-image: url(Assests/Momo.png);
     background-size: cover;
     background-repeat: no-repeat;
 } 
@@ -290,4 +318,107 @@ li {
 
 
 /* FAQ Section */
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: rgba(68,176,77,255);
+    padding: 3rem 8rem;
+    height: 49vh;
+    display: grid;
+    grid-template-rows: 40vh 10vh;
+    color: white;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    column-gap: 5rem ;
+    border-bottom: .1rem solid white;
+}
+
+.leave-feedback {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+
+.leave-feedback h2 {
+    font-family: var(--font-family2);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+
+.leave-feedback .footer-feedback-text {
+    font-family: var(--font-family1);
+    font-weight: 400;
+    font-size: .85rem;
+}
+
+.leave-feedback .feedback-input-name {
+    padding: .5rem .5rem;
+    border: none;
+    border-radius: .4rem;
+    color: white;
+}
+
+.leave-feedback #feedback {
+    padding: .6rem .5rem 5.5rem .5rem;
+    border: none;
+    border-radius: .4rem;
+    color: white;
+}
+
+.submit-btn .submit {
+    text-align: center;
+    padding: .5rem 1.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: rgba(68,176,77,255);
+    font-family: var(--font-family1);
+}
+
+
+.footer-container .logo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+}
+
+
+.links .title {
+    font-family: var(--font-family2);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.links, .footer-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-family: var(--font-family1);
+    font-size: .9rem;
+}
+
+.links, .footer-links  a {
+    color: white;
+}
+
+.policies-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4vh;
+    font-family: var(--font-family1);
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+
 

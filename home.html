@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/about.css">
 </head>
 <body>
     <header class="header-container">
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <img src="Assests/cafe logo no background.png" alt="Logo">
+        </div>
         <nav class="menu-container">
             <ul class="menu-items">
-                <li class="menu"><a href="#home">Home</a></li>
-                <li class="menu"><a href="#about-us">About Us</a></li>
-                <li class="menu"><a href="#menu">Menu</a></li>
-                <li class="menu"><a href="#contact">Contact Us</a></li>
+                <li class="menu"><a href="home.html">Home</a></li>
+                <li class="menu"><a href="about.html">About Us</a></li>
+                <li class="menu"><a href="menu.html">Menu</a></li>
+                <li class="menu"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="button-header">
@@ -27,6 +30,7 @@
 
     <main class="home-main">
         <section class="hero-section">
+            <div class="transparent"></div>
             <div class="hero-text">Sweet & Ready to eat</div>
                 <h1 class="hero-title">Welcome to our Cafe</h1>
                 <p class="hero-description">We welcome you to visit our cafe <br> which is situated in Sitapaila.</p>
@@ -40,7 +44,8 @@
                         <i class="ri-star-half-s-fill"></i>
                     </div>
                 </div>
-                <div class="hero-btn"><button class="order-now">Order Now</button>
+                <div class="hero-btn">
+                    <button class="order-now">Order Now</button>
                 </div>
         </section>
 
@@ -238,12 +243,14 @@
         <div class="footer-container">
             <div class="leave-feedback">
                 <h2 class="title">Leave a feedback</h2>
-                <p class="footer-feedback text">
-                    We would love to hear from you. Please leave your feedback.
+                <p class="footer-feedback-text">
+                    Cafe Double Tree looks for honest reviews and feedbacks from our customers for customers satisfaction and improvement. Please leave a feedback.
                 </p>
                 <input type="text" class="feedback-input-name" placeholder="Enter your name">
                 <textarea name="feedback" id="feedback" placeholder="Write Your Feedback"></textarea>
+                <div class="submit-btn">
                 <button class="submit">Submit</button>
+            </div>
             </div>
             <div class="links">
                 <h2 class="title">Quick Links</h2>
@@ -254,9 +261,9 @@
                     <li class="footer-link"><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="social-links">
-                <h2 class="social">Our Socials</h2>
-                <ul class="socials-container">
+            <div class="links">
+                <h2 class="title">Our Socials</h2>
+                <ul class="footer-links">
                     <li class="socials-link"><a href="facebook.com">Facebook</a></li>
                     <li class="socials-link"><a href="instagram.com">Instagram</a></li>
                     <li class="socials-link"><a href="tiktok.com">Tiktok</a></li>
@@ -264,11 +271,11 @@
                 </ul>
             </div>
             <div class="logo">
-                LOGO
+                <img src="Assests/Cafe logo with white background.jpg" alt="logo" class="logo">
             </div>
         </div>
         <div class="policies-container">
-            <span>Cafe Double Tree</span>
+            <span>&copy  Cafe Double Tree</span>
             <span>Privacy Policy</span>
             <span>Terms & Conditions</span>
         </div>

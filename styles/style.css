@@ -81,7 +81,7 @@ li {
 .hero-section {
   width: 100vw;
   height: 60vh;
-  background-image: url(Assests/Hero\ sectiom\ Image.jpg);
+  background-image: url(../Assests/hero-section-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
@@ -155,7 +155,7 @@ li {
   padding: 2rem 11rem;
 }
 
-.services .title-services {
+.title {
   font-family: var(--font-family2);
   font-weight: 400;
   font-size: 1rem;
@@ -163,7 +163,7 @@ li {
   padding: 1rem 0;
 }
 
-.services .services-offer {
+ .second-title {
   font-family: var(--font-family1);
   color: green;
   font-weight: 700;
@@ -196,24 +196,24 @@ li {
 }
 
 .scrollable-content .img1 {
-  background-image: url(Assests/event.png);
+  background-image: url(../Assests/event.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .scrollable-content .img2 {
-  background-image: url(Assests/birthday.png);
+  background-image: url(../Assests/birthday.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .scrollable-content .img3 {
-  background-image: url(Assests/Delivery.png);
+  background-image: url(../Assests/Delivery.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .scrollable-content .img4 {
-  background-image: url(Assests/Momo.png);
+  background-image: url(../Assests/Momo.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

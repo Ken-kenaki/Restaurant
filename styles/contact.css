@@ -1,5 +1,26 @@
+.contact-us {
+    padding: 3rem 11rem;
+    height: max-content;
+}
+
 .des {
     font-size: .9rem;
     font-family: var(--font-family1);
     font-weight: 400;
+    margin: 1rem 0 3rem 0;
+}
+
+.contact-links .social-media-links {
+    padding: 1rem 0;
+}
+
+.contact-links .social-media-links a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--font-family1);
+}
+
+.contact-links .social-media-links a i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
 }

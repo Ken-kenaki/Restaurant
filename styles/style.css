@@ -73,6 +73,10 @@ li {
   background-color: #1f5e2d;
   cursor: pointer;
 }
+.order-now:active {
+  background-color: #1b5227;
+  cursor: pointer;
+}
 
 .home-main {
   height: max-content;
@@ -91,6 +95,10 @@ li {
   row-gap: 1.5rem;
   margin: 0.5rem 0;
   position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: transform 1s ease, opacity 1s ease, visibility 1s ease;
 }
 
 .hero-section .transparent {
@@ -110,6 +118,10 @@ li {
   font-size: 1rem;
   color: green;
   z-index: 100;
+  transform: translateX(-100px);
+  transition: transform 1s ease;
+  opacity: 0;
+  visibility: hidden;
   /* margin-bottom: 1rem; */
 }
 
@@ -119,6 +131,10 @@ li {
   font-size: 3.4rem;
   z-index: 100;
   color: white;
+  transform: translateX(-100px);
+  transition: transform 1s ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hero-section .hero-description {
@@ -127,6 +143,10 @@ li {
   z-index: 100;
   font-size: 0.9rem;
   color: white;
+  transform: translateX(-100px);
+  transition: transform 1s ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hero-section .ratings {
@@ -134,6 +154,10 @@ li {
   column-gap: 0.5rem;
   z-index: 100;
   align-items: center;
+  transform: translateX(-100px);
+  transition: transform 1s ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hero-section .ratings .ratings-num {
@@ -141,6 +165,12 @@ li {
   font-weight: 700;
   font-size: 3rem;
   color: white;
+}
+.hero-btn .order-now {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 800ms ease-in-out, visibility 800ms ease-in-out;
+
 }
 
 .hero-section .ratings .ratings-stars i {
@@ -476,3 +506,30 @@ footer {
     color: white;
     padding: 1rem 0;
 }
+
+
+
+/* Intersection Observer */
+
+.hero-section#hero-section-active {
+  transform: translateY(10px);
+  opacity: 1;
+  visibility: visible;
+}
+
+#hero-section-active :is(.hero-text, .hero-title, .hero-description, .ratings, .ratings-num, .ratings-stars) {
+  /* background-color: red; */
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+#hero-section-active .hero-btn .order-now {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+

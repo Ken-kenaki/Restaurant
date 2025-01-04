@@ -35,9 +35,15 @@ li {
   background-color: white;
   font-family: var(--font-family1);
   border-bottom: 1px solid #22be44;
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 1000;
+  transition: positon 0.5s ease-in-out;
+}
+
+.header-fixed {
+  /* background-color: red; */
+  position: sticky;
 }
 
 .header-container .logo {
@@ -170,7 +176,6 @@ li {
   opacity: 0;
   visibility: hidden;
   transition: opacity 800ms ease-in-out, visibility 800ms ease-in-out;
-
 }
 
 .hero-section .ratings .ratings-stars i {
@@ -197,7 +202,7 @@ li {
   padding: 1rem 0;
 }
 
- .second-title {
+.second-title {
   font-family: var(--font-family1);
   color: green;
   font-weight: 700;
@@ -208,6 +213,7 @@ li {
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(4, 1fr);
+  /* overflow: hidden; */
 }
 
 .scrollable-content {
@@ -345,14 +351,12 @@ li {
   font-size: 1.8rem;
   color: green;
   padding: 1rem 0;
-
 }
 
 .faq-container {
   display: grid;
   grid-template-columns: minmax(100px, 2fr) minmax(200px, 1fr);
   column-gap: 8rem;
-
 }
 
 .faq-container .faq-questions {
@@ -373,21 +377,18 @@ li {
   transition: max-height 5s ease;
 }
 
-
 .faq-container .faq-questions i {
   position: absolute;
   right: 0;
   transition: transform 0.5s ease;
 }
 
-
 .faq-container .faq-questions .faq-answer {
   font-family: var(--font-family2);
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: gray;
   padding: 1rem 0;
-
 }
 
 .active-faq {
@@ -398,9 +399,6 @@ li {
 .active-faq i {
   transform: rotate(180deg);
 }
-
-
-
 
 /* Footer Section */
 footer {
@@ -498,16 +496,13 @@ footer {
   font-weight: 300;
 }
 
-
 .title-footer {
-    font-family: var(--font-family2);
-    font-weight: 400;
-    font-size: 1rem;
-    color: white;
-    padding: 1rem 0;
+  font-family: var(--font-family2);
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 0;
 }
-
-
 
 /* Intersection Observer */
 
@@ -517,7 +512,15 @@ footer {
   visibility: visible;
 }
 
-#hero-section-active :is(.hero-text, .hero-title, .hero-description, .ratings, .ratings-num, .ratings-stars) {
+#hero-section-active
+  :is(
+    .hero-text,
+    .hero-title,
+    .hero-description,
+    .ratings,
+    .ratings-num,
+    .ratings-stars
+  ) {
   /* background-color: red; */
   transform: translateX(0);
   opacity: 1;
@@ -528,8 +531,3 @@ footer {
   opacity: 1;
   visibility: visible;
 }
-
-
-
-
-

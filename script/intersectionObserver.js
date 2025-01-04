@@ -49,6 +49,17 @@ function callBackFuntion(entries) {
     });
 }
 
+window.addEventListener('scroll', () =>  {
+    if (window.scrollY > 100 && window.scrollY < 400){
+        header.classList.add('header-fixed');
+    }
+    else if (window.scrollY > 400) {
+        header.classList.remove('header-fixed');
+    }
+    console.log(scrollY)
+
+});
+
 
 
 
